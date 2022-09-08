@@ -1,252 +1,867 @@
-<?php get_header(); ?>
+<?php echo get_header() ?>
 
-
-
-<div class="load-container">
-    <div class="loading-screen">
+<section class="hero mt">
+    <div class="container">
+        <div class="hero-flex">
+            <div class="hero-title">
+                <span>
+                    Aligning customer with <br>
+                    design and strategy
+                </span>
+            </div>
+            <div class="slogan-award">
+                <a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/alignvn#summary" class="slogan-logo">
+                    <img src="/Images/Slogan.png" alt="">
+                </a>
+                <div class="slogan-award__content">
+                    <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/vn/agencies/branding">
+                        Align is top 34 UX/UI
+                    </a>
+                    <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/agencies/digital?page=6">Top VietNam Agency</a>
+                    <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/profile/alignvn#summary">5 <img src="/Images/star.png" alt="">
+                        Reviews (13)</a>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+<div id="canvas" class="canvas1">
 </div>
+<section class="slogan">
+    <div class="container">
+        <div class="slogan-wrap">
+            <div class="slogan-text" data-splitting>
+                <span class="slogan-animation">Your customers wants to know your
+                    <span class="slogan-orange">
+                        <a href="/" onclick="return false;" class="hover">brand. </a>
+                    </span>
+                </span>
+                <span class="slogan-animation">Create your story & reach them with your
+                    <span class="slogan-orange">
+                        <a href="/" onclick="return false;" class="hover">website. </a>
+                    </span>
 
-<main class="wrapper" data-barba="container" data-barba-namespace="home">
-    <?php if (have_rows('hero_slider')) : ?>
-        <section class="hero fadeJs">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <?php
-                  while (have_rows('hero_slider')) : the_row();
-                      $hero_sub = get_sub_field('hero_slider_sub');
-                      $hero_title = get_sub_field('hero_slider_title');
-                      $hero_slider_waves = get_sub_field('hero_slider_waves');
-                      $hero_image = get_sub_field('hero_image');
-                      $hero_body  = get_sub_field('hero_body');
-                      $hero_link = get_sub_field('hero_link');
-                  ?>
-                      <div class="swiper-slide">
-                          <div class="container">
-                              <div class="hero-top">
-                                  <h2 class="h2 hero-sub"><?php echo $hero_sub; ?></h2>
-                                  <h1 class="h1 hero-title"><?php echo $hero_title; ?></h1>
-                              </div>
-                              <div class="hero-bottom">
-                                  <div class="hero-wave">
-                                      <div class="hero-wave__item">
-                                          <img src="<?php echo $hero_slider_waves; ?>" alt="" />
-                                      </div>
-                                  </div>
-
-                                  <div class="hero-image">
-                                      <img src="<?php echo $hero_image['url']; ?>" alt="" />
-                                  </div>
-                                  <div class="hero-cta col-6">
-                                      <p class="hero-desc body">
-                                          <?php echo $hero_body; ?>
-                                      </p>
-
-                                      <a href="<?php echo $hero_link; ?>" class="col-4 hero-button body">
-                                          Learn More
-                                      </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  <?php endwhile; ?>
-              </div>
-              <div class="swiper-button-next swiper-button-lg"></div>
-              <div class="swiper-button-prev swiper-button-lg"></div>
-              <div class="swiper-pagination pagination-hide-on-desktop"></div>
-            </div>
-        </section>
-    <?php endif; ?>
-
-    <section class="slider mt">
-        <div class="container">
-            <h2 class="h2 col-6 slider-heading">
-                <?php the_field('home_page_slider_title'); ?>
-            </h2>
-            <?php if (have_rows('home_page_slide')) : ?>
-                <div class="slider-inner row">
-                    <div class="slider-wrapper col-5">
-                        <div class="reviewSlider slider-text">
-                            <div class="swiper-wrapper">
-                                <?php while (have_rows('home_page_slide')) : the_row();
-                                    $home_page_slider_title = get_sub_field('home_page_slider_title');
-                                    $home_page_slider_text = get_sub_field('home_page_slider_text');
-                                    $home_page_slider_link = get_sub_field('home_page_slider_link');
-                                    $home_page_slider_image = get_sub_field('home_page_slider_image');
-                                ?>
-                                    <div class="swiper-slide slider-slide">
-                                        <div class="swiper-slide-container">
-                                            <h3 class="h3 slider-title text-uppercase">
-                                                <?php echo $home_page_slider_title ?>
-                                            </h3>
-                                            <p class="body slider-desc">
-                                                <?php echo $home_page_slider_text; ?>
-                                            </p>
-                                            <a href="<?php echo $home_page_slider_link; ?>" class="btn btn-green col-7">
-                                                Find out more
-                                            </a>
-                                        </div>
-                                    </div>
-                                <?php endwhile; ?>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="imageSlider col-6 slider-image">
-                        <div class="swiper-wrapper">
-                            <?php while (have_rows('home_page_slide')) : the_row();
-                                $home_page_slider_image = get_sub_field('home_page_slider_image');
-                            ?>
-                                <div class="swiper-slide slider-slide">
-                                    <div class="rto-box">
-                                        <img src=" <?php echo $home_page_slider_image; ?>" alt="" />
-                                    </div>
-                                </div>
-                            <?php endwhile; ?>
-                        </div>
-                    </div>
-
-                    <div class="swiper-button-next reviewSlider-button-next"></div>
-                    <div class="swiper-button-prev reviewSlider-button-prev"></div>
-                    <div class="swiper-pagination hide-on-desktop reviewSlider-pagination"></div>
-
-                </div>
-            <?php endif; ?>
-        </div>
-    </section>
-
-    <section class="partner mt">
-        <div class="container">
-            <div class="partner-inner">
-                <div class="partner-content row">
-                    <h2 class="h2 partner-title text-uppercase col-6">
-                        <?php the_field('home_page_partner_title') ?>
-                    </h2>
-                    <p class="body partner-desc col-6">
-                        <?php the_field('home_page_partner_text') ?>
-                    </p>
-                </div>
-                <div class="partner-logos">
-                    <div class="logoJs">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <?php
-                                $images = get_field('home_page_partner_logo');
-                                if ($images) : ?>
-                                    <?php foreach ($images as $image) : ?>
-                                        <div class="swiper-slide partner-item">
-                                            <img src="<?php echo $image; ?>" />
-                                        </div>
-                                    <?php endforeach; ?>
-                                <?php endif;
-                                ?>
-                            </div>
-                        </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                </div>
+                </span>
+                <span class="slogan-animation">
+                    Keep them coming back with
+                    <span class="slogan-orange">
+                        <a href="/" onclick="return false;" class="hover">SEO</a>
+                    </span>.
+                </span>
             </div>
         </div>
-    </section>
-
-    <section class="mt discover">
-        <div class="container">
-            <div class="discover-block">
-                <h2 class="h2 text-uppercase discover-title">
-                    <?php the_field('home_page_discover_title') ?>
-                </h2>
-                <p class="body discover-desc">
-                    <?php the_field('home_page_discover_description') ?>
-                </p>
-            </div>
-            <?php // Check rows exists.
-            if (have_rows('home_page_discover_block')) :
-
-                // Loop through rows.
-                while (have_rows('home_page_discover_block')) : the_row();
-
-                    // Load sub field value.
-                    $discover_title = get_sub_field('discover_block_title');
-                    $discover_body = get_sub_field('discover_block_body');
-                    $discover_image = get_sub_field('discover_block_image');
-                    $discover_heading = get_sub_field('discover_block_heading');
-                    $discover_logo = get_sub_field("discover_block_logo");
-
-                    // Do something...
-            ?>
-                    <div class="discover-block">
-                        <div class="discover-item">
-                            <div class="discover-image">
-                                <img src="<?php echo $discover_image['url']; ?>" alt="" />
+    </div>
+</section>
+<section class="project">
+    <div class="container">
+        <div class="project-title">Website projects</div>
+        <div class="project-grid">
+            <a href="./Work/Funingpu.html" class="project-item project-view">
+                <img src="/Images/FuningpuBanner.png" alt="">
+                <div class="project-content">
+                    <div class="project-title">
+                        Web Dev for International Manufacturer
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Funingpu
                             </div>
-                            <img src="<?php echo $discover_logo; ?>" alt="" class="discover-logo" />
-                            <div class="discover-info">
-                                <div class="discover-info__inner">
-                                    <h4 class="h4 discover-info__title"><?php echo $discover_title; ?></h4>
-                                    <p class="body">
-                                        <?php echo $discover_body; ?>
+                            <div class="project-overlay__field">
+                                Manufacturer
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Work/Furas.html" class="project-item project-view">
+                <img src="/Images/FurasBanner.png" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Furas Furniture
+                            </div>
+                            <div class="project-overlay__field">
+                                Manufacturer
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./Work/ICM.html" class="project-item project-view">
+                <img src="/Images/ICMBanner.png" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                ICMFalk
+                            </div>
+                            <div class="project-overlay__field">
+                                Non-profit
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/SolutionsMet.html" class="project-item project-view">
+                <img src="/Images/SmBanner.png" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Solutions Met
+                            </div>
+                            <div class="project-overlay__field">
+                                Technology
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/Ardor.html" class="project-item project-view">
+                <img src="/Images/ArdorBanner.png" alt="">
+                <div class="project-overlay project-view">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Ardor
+                            </div>
+                            <div class="project-overlay__field">
+                                Architechure
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/DataSociety.html" class="project-item project-view">
+                <img src="/Images/DataBanner.png" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Data Society
+                            </div>
+                            <div class="project-overlay__field">
+                                Technology
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Website
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <!-- <div class="project-button">
+                    <div class="button">
+                        <div class="button__filler"></div>
+                        <span class="button__text">
+                            <a href="/works.html" class="button__text-inner">View all projects</a>
+                        </span>
+                    </div>
+                </div> -->
+    </div>
+</section>
+<section class="project">
+    <div class="container">
+        <div class="project-title">Branding projects</div>
+        <div class="project-grid">
+            <a href="/Work/nafoods-print-design.html" class="project-item branding-item project-view">
+                <img src="/Images/NaFoodBanner.jpg" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Nafoods
+                            </div>
+                            <div class="project-overlay__field">
+                                Foods
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Packaging Design
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/skyline-spirulina.html" class="project-item branding-item project-view">
+                <img src="/Images/SkylineBanner.webp" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title title-small">
+                                Skyline
+                            </div>
+                            <div class="project-overlay__field">
+                                Health
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/nafoods-group.html" class="project-item branding-item project-view">
+                <img src="/Images/NaFoodBanner.webp" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Nafoods
+                            </div>
+                            <div class="project-overlay__field">
+                                Food
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/bizen.html" class="project-item branding-item project-view">
+                <img src="/Images/BizenBanner.webp" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Bizen Catering
+                            </div>
+                            <div class="project-overlay__field">
+                                Food
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/msi.html" class="project-item branding-item project-view">
+                <img src="/Images/CancerBanner.webp" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                Marie Stopes
+                            </div>
+                            <div class="project-overlay__field">
+                                Health Care
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="/Work/em-wear.html" class="project-item branding-item project-view">
+                <img src="/Images/EmWearBanner.webp" alt="">
+                <div class="project-overlay">
+                    <div class="project-overlay__wrap">
+                        <div class="project-overlay__top">
+                            <div class="project-overlay__title">
+                                EmWear
+                            </div>
+                            <div class="project-overlay__field">
+                                Fashion
+                            </div>
+                        </div>
+                        <div class="project-overlay__bottom">
+                            Branding
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+        <!-- <div class="project-button">
+                    <div class="button">
+                        <div class="button__filler"></div>
+                        <span class="button__text">
+                            <a href="/works.html" class="button__text-inner">View all projects</a>
+                        </span>
+                    </div>
+                </div> -->
+    </div>
+</section>
+<section class="services services-section">
+    <div class="container">
+        <div class="services-flex">
+            <div class="services-title">
+                Services
+            </div>
+            <div class="services-list">
+                <div class="services-item">
+                    <div class="services-item__heading">
+                        <span class="services-item__title">
+                            Branding
+                        </span>
+                        <span class="services-item__arrow">
+                            <img src="/Images/Arrow.png" alt="">
+                        </span>
+                    </div>
+                    <div class="services-item__desc">
+                        Design brand identity with a strategy that makes your brand stand out and successful.
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-item__heading">
+                        <span class="services-item__title">
+                            Websites
+                        </span>
+                        <span class="services-item__arrow">
+                            <img src="/Images/Arrow.png" alt="">
+                        </span>
+                    </div>
+                    <div class="services-item__desc">
+                        Design and develop beautiful websites that can tell your brand’s story.
+
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-item__heading">
+                        <span class="services-item__title">
+                            SEO
+                        </span>
+                        <span class="services-item__arrow">
+                            <img src="/Images/Arrow.png" alt="">
+                        </span>
+                    </div>
+                    <div class="services-item__desc">
+                        Creating content for your website that can keep your client coming back.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-quote" data-splitting>
+            <span data-content="customer">Customer centered design.</span><br>
+            <span data-content="outsourcing">Process driven.</span>
+            <span data-content="design">On brand design.</span><br>
+            <span data-content="custom">Custom design and coding.</span>
+            <span data-content="result">Result oriented.</span>
+            <span data-content="transparency">Transparency.</span><br>
+            <span data-content="clear">Clear & frequent communication.</span>
+
+            <div class="services-symbol">
+                <div class="services-content" id="customer">
+                    <span>
+                        We do careful research then design to meet your customer's needs.
+                    </span>
+                </div>
+                <div class="services-content" id="outsourcing">
+                    <span>
+                        Our clear process makes you feel at peace because you know what to expect for each phase
+                        of the project.
+
+                    </span>
+                </div>
+                <div class="services-content" id="design">
+                    <span>
+                        Our design follow your brand's guidelines
+                    </span>
+                </div>
+                <div class="services-content" id="custom">
+                    <span>
+                        We make sure that every design is unique and fit with the personality of your brand
+                    </span>
+                </div>
+                <div class="services-content" id="result">
+                    <span>
+                        We make sure that we can solve your problem in our design
+
+                    </span>
+                </div>
+                <div class="services-content" id="transparency">
+                    <span> We are transparent about what we can and can not do
+                    </span>
+                </div>
+                <div class="services-content" id="clear">
+                    <span>
+                        We strictly follow the timeline and keep you updated on the progress. We work closely
+                        with you to solve any challenge that arises during and after the project.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients">
+    <div class="clients-marque">
+        <div class="container">
+            <div class="clients-title">
+                Clients
+            </div>
+            <div class="clients-list">
+                <div class="clients-list__heading">
+                    Educational
+                </div>
+                <div class="clients-list__marque">
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/EduLogoOne.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoTwo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoThree.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFour.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFive.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSix.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSeven.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoEight.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoNine.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/EduLogoOne.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoTwo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoThree.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFour.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFive.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSix.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSeven.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoEight.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoNine.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/EduLogoOne.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoTwo.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoThree.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFour.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoFive.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSix.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoSeven.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoEight.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/EduLogoNine.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="clients-list">
+                <div class="clients-list__heading">
+                    Industrial
+                </div>
+                <div class="clients-list__marque">
+                    <ul class="clients-list__icon marqueForward">
+                        <li>
+                            <img src="/Images/IndusLogo1.png" alt="" class="clients-list__w7">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo8.png" alt="" class="clients-list__w7">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo9.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marqueForward">
+                        <li>
+                            <img src="/Images/IndusLogo1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo9.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marqueForward">
+                        <li>
+                            <img src="/Images/IndusLogo1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/IndusLogo9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="clients-list">
+                <div class="clients-list__heading">
+                    American
+                </div>
+                <div class="clients-list__marque">
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/AmericanLogo1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo9.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/AmericanLogo1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo9.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/Images/AmericanLogo1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo3.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo4.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo5.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo6.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo7.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo8.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/Images/AmericanLogo9.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="reviews">
+            <div class="reviews-flex mainSwiper">
+                <div class="personSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews-info">
+                            <div class="reviews-personal">
+                                <img src="/Images/ArdorClient.jpg" alt="">
+                                <div class="reviews-personal__text">
+                                    <p>Arden Linh Nguyen
                                     </p>
+                                    <p>Head of Marketing, Ardor Group
+                                    </p>
+
+                                    <ul>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="discover-item__heading">
-                                <?php echo $discover_heading; ?>
+                        </div>
+                        <div class="swiper-slide reviews-info">
+                            <div class="reviews-personal">
+                                <img src="/Images/GIACeo.png" alt="">
+                                <div class="reviews-personal__text">
+                                    <p>Peter Nguyen</p>
+                                    <p>VP of marketing, Gia Capital LLC.</p>
+
+
+                                    <ul>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-info">
+                            <div class="reviews-personal">
+                                <img src="/Images/Phil.png" alt="">
+                                <div class="reviews-personal__text">
+                                    <p>Phil Greswold</p>
+                                    <p>MD, KEEP</p>
+
+
+                                    <ul>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/Images/star.png" alt=""></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-            <?php
 
-                // End loop.
-                endwhile;
-
-            // No value.
-            else :
-            // Do something...
-            endif; ?>
-
-        </div>
-    </section>
-
-    <section class="news mt">
-        <div class="container">
-            <h2 class="h2 text-uppercase news-title">Hung Yen News</h2>
-            <div class="row">
-                <?php
-                $args = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish',
-                    'posts_per_page' => 3,
-
-                );
-
-                $loop = new WP_Query($args);
-
-                while ($loop->have_posts()) : $loop->the_post();
-
-
-                ?>
-                    <div class="news-item col-4">
-                        <div class="rto-box news-item__image">
-                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" />
+                </div>
+                <div class="reviewSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide reviews-quote">
+                            <q>They managed to offer a professional website that was so affordable compared to
+                                the effort that they put in.
+                            </q>
                         </div>
-                        <div class="news-item__content">
-                            <h5 class="h5 news-item__title">
-                                <?php print the_title(); ?>
-                            </h5>
-                            <p class="news-item__desc">
-                                <?php echo wp_trim_words(get_the_content(), 50); ?>
-                            </p>
+                        <div class="swiper-slide reviews-quote">
+                            <q>Their designers did an awesome job and we felt that they are masters of their
+                                craft.</q>
+                        </div>
+                        <div class="swiper-slide reviews-quote">
+                            <q>
+                                Their good communication stood out for us.
+                            </q>
                         </div>
                     </div>
-                <?php
-                endwhile;
+                </div>
+            </div>
+            <a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/alignvn#reviews" class="reviews-logo hover">
+                <img src="/Images/Slogan.png" alt="">
+                <p>Reviews from Clutch</p>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="insights last-section">
+    <div class="container">
+        <div class="insights-title">
+            Insights
+        </div>
+        <div class="insightSlider">
+            <div class="swiper-wrapper">
+                <a href="/blog/how-good-design-is-helping-businesses-in-vietnam-grow.html" class="insightSlider-item swiper-slide">
+                    <div class="rto-box">
+                        <img src="/Images/BlogBannerOne.png" alt="">
+                    </div>
+                    <div class="insightSlider-title">
+                        How good design is helping bussiness in VietNam grow
+                    </div>
+                    <div class="button-type">
+                        <div>Case Study</div>
+                        <div>UI/UX</div>
+                    </div>
+                </a>
+                <a href="/blog/what-is-branding-the-important-basics.html" class="insightSlider-item swiper-slide">
+                    <div class="rto-box">
+                        <img src="/Images/BlogBannerThree.png" alt="">
+                    </div>
+                    <div class="insightSlider-title">
+                        What is Branding? The important basics
+                    </div>
+                    <div class="button-type">
+                        <div>Process and Tools</div>
+                        <div>Branding</div>
+                    </div>
+                </a>
+                <a href="/blog/the-importance-of-intelligent-website-design-for-business.html" class="insightSlider-item swiper-slide">
+                    <div class="rto-box">
+                        <img src="/Images/BlogBannerTwo.png" alt="">
+                    </div>
+                    <div class="insightSlider-title">
+                        The Importance Of Intelligent Website Design For Business
+                    </div>
+                    <div class="button-type">
+                        <div>UI/UX</div>
+                    </div>
+                </a>
+                <a href="/blog/top-3-million-dollar-questions-to-expect-from-investors.html" class="insightSlider-item swiper-slide">
+                    <div class="rto-box">
+                        <img src="/Images/Top3Banner.JPG" alt="">
+                    </div>
+                    <div class="insightSlider-title">
+                        Top 3 Million-Dollar Questions To Expect From Investors
 
-                wp_reset_postdata();  ?>
+                    </div>
+                    <div class="button-type">
+                        <div>Interview</div>
+                    </div>
+                </a>
+                <a href="/blog/content-marketing.html" class="insightSlider-item swiper-slide">
+                    <div class="rto-box">
+                        <img src="/Images/MarketingContentBanner.jpg" alt="">
+                    </div>
+                    <div class="insightSlider-title">
+                        What is content marketing and why it matters (to your business.)
 
+                    </div>
+                    <div class="button-type">
+                        <div>Website</div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
-
-<?php get_footer(); ?>
+<?php echo get_footer() ?>
