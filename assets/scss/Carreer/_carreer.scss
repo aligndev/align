@@ -1,0 +1,183 @@
+.carreer {
+    margin-bottom: 10rem;
+    &-h5 {
+        font-size: 3.6rem;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+    &-title {
+        font-size: 9.6rem;
+        width: calc(100%*9/12);
+        margin-bottom: 7.3rem;
+        > span {
+            color: $yellow;
+            text-decoration: underline;
+            
+        }
+    }
+    &-job {
+        position: relative;
+        font-size: 2.4rem;
+        line-height: 130%;
+        &__title {
+            color: $yellow;
+            font-size: 4.8rem;
+            line-height: 140%;
+        }
+        &__time,
+        &__exper {
+            margin-bottom: 10px;
+            > span {
+                font-weight: 500;
+                
+            }
+        }
+        &__desc {
+            margin-bottom: 8.5rem;
+        }
+        &__respon,
+        &__skill,
+        &__extra {
+            margin-bottom: 8rem;
+        }
+    }
+
+    > div > div > div > ul,
+    div > div > div > ul > li {
+        list-style-type: disc;
+    }
+
+    &-button {
+        justify-content: flex-start;
+        .button {
+            margin: unset;
+        }
+    }
+}
+
+.popup {
+    background-color: $black;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    transition: $transition;
+    z-index: 100;
+
+    @include breakpoint-down(medium) {
+        width: 80%;
+    }
+    @include breakpoint-down(small) {
+        width: 100%;
+    }
+
+
+    &-wrap {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%,-40%);
+        padding: 0 72px;
+        width: 100%;
+        > div > .menu-black__close {
+            height: 35px;
+            width: 35px;
+            margin-bottom: 2rem;
+            margin-left: -1rem;
+            > span {
+                width: 20px;
+                top: 15px;
+                right: 8px;
+            }
+        }
+        > div > .carreer-button {
+            color: $white;
+            margin-top: 6rem;
+            > .button{
+                border: 1px solid $white;
+
+                > .button__filler {
+                    background: $white;
+                }
+            }
+        
+            > .button-hover .button__text-inner{
+                color: $black;
+            }
+        }
+        .contact-input {
+            width: 100%;
+            
+            > input,input::placeholder,
+            textarea, textarea::placeholder {
+                color: $white;
+                font-size: 2.4rem;
+
+                @include breakpoint-down(small) {
+                    font-size: 1.8rem;
+                }
+            }
+            > textarea {
+                height: 16rem;
+            }
+            > div > label {
+                color: $white;
+                font-size: 2.4rem;
+                @include breakpoint-down(small) {
+                    font-size: 1.8rem;
+                }
+            }
+
+        }
+
+    }
+    &.active {
+        right: 0;
+
+        @include breakpoint-down(small) {
+            right: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1600px) {
+    .carreer-title {
+        font-size: 5vw;
+    }
+}
+
+@include breakpoint-down(medium) {
+    .carreer {
+
+        &-title {
+            font-size: 6rem;
+            width: 100%;
+            line-height: 130%;
+        }
+    }
+}
+
+@include breakpoint-down(small) {
+    .carreer {
+        position: relative;
+        overflow: hidden;
+
+        &-h5 {
+            font-size: 2rem;
+        }
+        &-title {
+            font-size: 4.8rem;
+        }
+        &-job {
+            font-size: 1.6rem;
+            &__title {
+                font-size: 2.5rem;
+            }
+            &__desc,
+            &__skill {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}

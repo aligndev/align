@@ -1,0 +1,22 @@
+.frame1 {
+	width: 100%;
+	height: 250vh;
+}
+
+@media screen and (max-width: 1440px) {
+    .frame1 {
+        height: 300vh;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .frame1 {
+        height: 170vh;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .frame1 {
+        height: 200vh;
+    }
+}

@@ -1,0 +1,132 @@
+.blogDetail {
+    margin-bottom: 20rem;
+    &-heading {
+        margin-bottom: 2rem;
+    }
+    &-parallax {
+        padding-bottom: 39.97747747747747%;
+        margin-top: 2rem;
+    }
+    &-flex {
+        display: flex;
+
+        > .blogDetail-parallax {
+            width: 50%;
+            &:nth-child(1) {
+                margin-right: 24px;
+            }
+        }
+    }
+
+    &-desc {
+        font-size: 2.4rem;
+        line-height: 150%;
+        width: 70%;
+        margin: 8rem auto;
+
+        @include breakpoint-down(medium) {
+            font-size: 2.2rem;
+            width: 100%;
+        }
+
+        @include breakpoint-down(small) {
+            font-size: 1.8rem;
+
+        }
+
+        &__content {
+            margin-bottom: 20px;
+        }
+
+        &__h3 {
+            font-size: 3rem;
+        }
+    }
+
+    &-h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        margin: 8rem 0;
+        max-width: 900px;
+        line-height: 150%;
+    }
+
+}
+
+.more {
+    margin-bottom: 12.8rem;
+    &-title {
+        font-size: 2.4rem;
+        margin: 2.7rem 0 2rem 0;
+
+        @include breakpoint-down(medium) {
+            font-size: 2.2rem;
+            width: 100%;
+        }
+        @include breakpoint-down(small) {
+            font-size: 1.8rem;
+            
+        }
+    }
+    &-list {
+        margin-bottom: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blogDetail {
+        margin-bottom: 10rem;
+        &-desc {
+            width: 70%;
+        }
+        &-parallax {
+            height: 560px;
+        }
+        &-desc {
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .more {
+        margin-bottom: 6.5rem;
+        &-list {
+            margin-bottom: 6.5rem;
+        }
+    }
+} 
+
+@include breakpoint-down(medium) {
+    .blogDetail {
+        margin-bottom: 5rem;
+        &-desc {
+            width: 100%;
+        }
+        &-parallax {
+            height: 330px;
+        }
+    }
+    .more {
+
+        &-list {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include breakpoint-down(small) {
+    .blogDetail {
+        &-flex {
+            > .blogDetail-parallax:nth-child(1) {
+                display: none;
+            }
+            > .blogDetail-parallax:nth-child(2) {
+                width: 100%;
+            }
+        }
+        &-desc {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}

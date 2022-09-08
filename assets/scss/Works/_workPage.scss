@@ -1,0 +1,572 @@
+.ct-title {
+    text-align: center;
+    font-size: 9.6rem;
+    margin-bottom: 6.6rem;
+}
+.w-8 {
+    width: calc(100%*8/12);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+}
+.block {
+    display: block !important;
+}
+.w-auto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.neumorphism {
+    -webkit-filter: drop-shadow(3.39185px 6.10534px 7.57514px rgba(209, 217, 230, 0.67)) drop-shadow(3.39185px 2.71348px 3.8441px rgba(209, 217, 230, 0.34)) drop-shadow(3.39185px 3.16573px 4.29635px rgba(209, 217, 230, 0.4)) drop-shadow(3.39185px 3.95716px 5.08778px rgba(209, 217, 230, 0.48)) drop-shadow(-2.26124px -7.12289px 7.34902px rgba(255, 255, 255, 0.75)) drop-shadow(-2.26124px -4.16453px 4.82456px rgba(255, 255, 255, 0.539141)) drop-shadow(-2.26124px -3.54604px 3.9601px rgba(255, 255, 255, 0.44708)) drop-shadow(-2.26124px -3.21304px 3.4107px rgba(255, 255, 255, 0.375));
+            filter: drop-shadow(3.39185px 6.10534px 7.57514px rgba(209, 217, 230, 0.67)) drop-shadow(3.39185px 2.71348px 3.8441px rgba(209, 217, 230, 0.34)) drop-shadow(3.39185px 3.16573px 4.29635px rgba(209, 217, 230, 0.4)) drop-shadow(3.39185px 3.95716px 5.08778px rgba(209, 217, 230, 0.48)) drop-shadow(-2.26124px -7.12289px 7.34902px rgba(255, 255, 255, 0.75)) drop-shadow(-2.26124px -4.16453px 4.82456px rgba(255, 255, 255, 0.539141)) drop-shadow(-2.26124px -3.54604px 3.9601px rgba(255, 255, 255, 0.44708)) drop-shadow(-2.26124px -3.21304px 3.4107px rgba(255, 255, 255, 0.375));
+    border-radius: 16.7602px;
+
+    > video {
+        border-radius: 16.7602px;
+    }
+}
+.mb-20 {
+    margin-bottom: 16rem;
+
+
+    @include breakpoint-down(medium) {
+        margin-bottom: 10rem;
+    }
+    @include breakpoint-down(small) {
+        margin-bottom: 7rem;
+    }
+}
+.border-image {
+    display: block !important;
+    font-size: 0;
+    overflow: hidden;
+    border: 16px solid var(--colorBorder);
+    border-radius: 24px;
+
+    &__blue {
+        --colorBorder: #2980FF;
+    }
+    &__red {
+        --colorBorder: #FC4F42;
+    }
+    &__cloud {
+        --colorBorder: #69ADFF;
+    }
+    &__green {
+        --colorBorder: #20CB6A;
+    }
+    &__yellow {
+        --colorBorder: #FDA942;
+    }
+    &__purple {
+        --colorBorder: #845BA3;
+    }
+}
+.f-video {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    object-fit: fill;
+}
+.w-75 {
+    width: 75%;
+
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+}
+.flex-center{
+    align-items: center;
+}
+.w-25{
+    width: 20%;
+    @include breakpoint-down(medium){
+        width: 100%;
+    }
+    > img {
+        height: 100%;
+        @include breakpoint-down(medium){
+            height: 100%;
+        }
+    }
+}
+.mw-300{
+    max-width: calc(100%*5/12);
+}
+.mobile-mb {
+    @include breakpoint-down(small) {
+        margin-bottom: 4rem;
+    }
+}
+//<<----- FURAS STYLE START ----->> // 
+.work1 {
+    margin-bottom: 16rem;
+    padding-bottom: 4rem;
+    &-type {
+        justify-content: center;
+        margin-bottom: 11.4rem;
+        > div {
+            border: 1px solid $black;
+            color: $black;
+        }
+    }
+    &-banner {
+        display: block;
+        > img {
+            width: 100%;
+            object-fit: cover;
+        }   
+        &:nth-of-type(1) {
+            margin-bottom: 16rem;
+        }
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            margin-bottom: 16rem;
+        }
+        &:nth-of-type(4) {
+            margin-top: 16rem;
+            margin-bottom: 16rem;
+        }
+        &:nth-of-type(5) {
+            margin-bottom: 16rem;
+        }
+        &:nth-of-type(6) {
+            margin-bottom: 16rem;
+        }
+    }
+
+    &-flex {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &-title {
+        font-size: 7.2rem;
+        line-height: 130%;
+        width: 45%;
+
+        @include breakpoint-down(xlarge) {
+            width: 100%;
+        }
+
+        > span {
+            position: relative;
+            top: -15px;
+            vertical-align: top;
+        }
+    }
+    &-desc {
+        font-size: 2.4rem;
+        line-height: 130%;
+    }
+    &-desc {
+        width: 50%;
+    }
+
+    &-about {
+        margin-bottom: 16rem;
+    }
+    &-approach {
+        margin: 16rem 0;
+    }
+    &-challenge {
+        margin-bottom: unset;
+    }
+}
+//<<----- FURAS STYLE END ----->> // 
+
+//<<----- ICM STYLE START ----->> // 
+.work2 {
+    position: relative;
+    .work1 {
+        &-type {
+            margin-bottom: unset;
+        }
+        &-title {
+            width: calc(100%*5/12);
+        }
+        &-banner {
+            display: block;
+            > img {
+                width: 100%;
+                object-fit: cover;
+            }
+            &:nth-of-type(1) {
+                margin-bottom: unset;
+            }
+            &:nth-of-type(3) {
+                margin-bottom: 16rem;
+            }
+            &:nth-of-type(4){
+                margin-top: unset;
+                margin-bottom: 16rem;
+            }
+            &:nth-of-type(5){
+                margin-top: 16rem;
+            }
+            &:nth-of-type(7){
+                margin-bottom: 16rem;
+            }
+        }
+    }
+    &-banner {
+        > img {
+            transform: scale(1.15) translate(0%, -15%);
+            position: relative;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+//<<----- ICM STYLE END ----->> // 
+
+//<<----- PUNINGPU STYLE START ----->> // 
+.work3 {
+    &-banner {
+        > img {
+            transform: translate(0, -10%) scale(1.1);
+        }
+    }
+    &-result {
+        margin-bottom: 16rem;
+    }
+    &-flex {
+        margin-bottom: 16rem;
+
+    }
+    &-video {
+        position: relative;
+        margin-bottom: 16rem;
+        width: 100%;
+        height: 90vh;
+
+        @include breakpoint-down(small) {
+            height: 20vh;
+        }
+        > video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .work1 {
+        &-banner {
+            display: block;
+            &:nth-of-type(1) {
+                margin-bottom: unset;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(7) {
+                > img {
+                    display: block;
+                    margin: 16rem auto;
+                    width: auto;
+                }
+            }
+            &:nth-of-type(3) {
+                margin-top: 10rem;
+                margin-bottom: 16rem;
+            }
+            &:nth-of-type(4){
+                margin-top: 15rem;
+                margin-bottom: 16rem;
+            }
+            &:nth-of-type(5),
+            &:nth-of-type(6){
+                margin-bottom: 16rem;
+            }
+        }
+        &-about {
+            margin-bottom: 16rem;
+        }
+
+    }
+}
+
+//<<----- PUNINGPU STYLE END ----->> // 
+
+
+//<<----- DATA SOCIETY STYLE START ----->> //
+
+.data {
+    &-mb {
+        margin-bottom: -16rem;
+
+        @include breakpoint-down(medium) {
+            margin-bottom: unset;
+        }
+    }
+    &-banner {
+        transform: translate(0, -40%) scale(1.1);
+    }
+
+    &-flex {
+        display: flex;
+        justify-content: space-around;
+        > a {
+            display: block;
+            width: calc(100%*2/12);
+        }
+    }
+}
+
+//<<----- DATA SOCIETY STYLE END ----->> //
+
+
+//<<----- ARDOR STYLE START ----->> //
+
+.ardor-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.ardor-banner {
+    transition: transform .3s ease-out;
+
+    > img {
+        width: 100%;
+    }
+    &:hover {
+        transition: transform .3s ease-out;
+        transform: translateY(-50px);
+
+        @include breakpoint-down(small) {
+            transform: translateY(-25px);
+        }
+    }
+    &:not(:nth-of-type(1)) {
+        margin-left: 24px;
+
+        @include breakpoint-down(small) {
+            margin-left: 4px;
+        }
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(4) {
+        width: calc(100%*3/12);
+        height: auto;
+    }
+    &:nth-of-type(2) {
+        width: calc(100%*2/12);
+        height: auto;
+        margin-top: 14rem;
+
+        @include breakpoint-down(small) {
+            margin-top: 4rem;
+        }
+    }
+    &:nth-of-type(3) {
+        width: calc(100%*4/12);
+        height: auto;
+    }
+    &:nth-of-type(4){
+        margin-top: 8.5rem;
+
+        @include breakpoint-down(small) {
+            margin-top: 2.5rem;
+        }
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .ct-title {
+        font-size: 7.5rem;
+    }
+    .work1 {
+
+        &-title {
+            font-size: 5.2rem;
+        }
+
+        &-banner {
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(3){
+                margin-bottom: 10rem;
+            }
+            &:nth-of-type(4){
+                margin-top: 10rem;
+            }
+            &:nth-of-type(6){
+                margin-bottom: 14rem;
+            }
+        }
+        &-about {
+            margin-bottom: 10rem;
+        }
+        &-approach {
+            margin: 10rem 0;
+        }
+        &-video {
+            margin-bottom: 10rem;
+        }
+    }
+    .work3 {
+        &-flex {
+            display: block;
+            
+            > a:nth-child(1)>  img {
+                display: block;
+                margin: 0 auto 10rem;
+                width: 35%;
+            }
+            > a:nth-child(2) > img{
+                width: 100%;
+            }
+        }
+    }
+    .mw-300{
+        max-width: 100%;
+    }
+}
+.lightgallarey-item > img {
+    width: 100%;
+}
+@include breakpoint-down(medium) {
+    .ct-title {
+        font-size: 4.8rem;
+        line-height: 130%;
+        margin-bottom: 3.8rem;
+    }
+    .work1 {
+        &-type {
+            margin-bottom: 8rem;
+        }
+        &-flex {
+            display: block;
+        }
+        &-desc {
+            width: 100%;
+        }
+        &-title {
+            margin-bottom: 20px;
+        }
+    }
+    .work2 {
+        .work1 {
+            &-title  {
+                width: 100%;
+            }
+        }
+    }
+    .work3 {
+        &-result {
+            margin-bottom: 10rem;
+        }
+        .work1 {
+            &-banner {
+                &:nth-of-type(2),
+                &:nth-of-type(7){
+                    > img {
+                        width: 100%;
+                        margin: 10rem auto;
+                    }
+                }
+                &:nth-of-type(4){
+                    margin-top: 10rem;
+                    margin-bottom: 15rem;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint-down(small) {
+    .ct-title {
+        margin-bottom: 1.8rem;
+    }
+    .work1 {
+        margin-bottom: 9rem;
+        &-type {
+            margin-bottom: 4.5rem;
+        }
+        &-title {
+            width: 100%;
+            font-size: 3.6rem;
+            line-height: 120%;
+            margin-bottom: 10px;
+        }
+        &-desc {
+            font-size: 1.6rem;
+            line-height: 130%;
+        }
+        &-banner {
+            &:nth-of-type(1),
+            &:nth-of-type(2),
+            &:nth-of-type(4),
+            &:nth-of-type(5),
+            &:nth-of-type(6) { 
+                margin-bottom: 6rem;
+            }
+            &:nth-of-type(4) {
+                margin-top: 4.5rem;
+            }
+        }
+        &-about {
+            margin-bottom: 4rem;
+        }
+        &-approach {
+            margin: 4rem 0;
+        }
+    }
+    .work2 {
+        .work1 {
+            &-about  {
+                margin-bottom: 2rem;
+            }
+            &-banner {
+                &:nth-of-type(3) {
+                    margin-top: 5rem;
+                }
+                &:nth-of-type(4) {
+                    margin-bottom: 6rem;
+                }
+                &:nth-of-type(5) {
+                    margin-top: 6rem;
+                }
+                &:nth-of-type(7) {
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+    }
+    .work3 {
+        &-flex {
+            margin-bottom: unset;
+            > img:nth-child(1) {
+                margin: 0 auto 5rem;
+                width: 40%;
+            }
+        }
+        &-video {
+            margin-bottom: 6rem;
+        }
+        .work1 {
+            &-about {
+                margin-bottom: 5rem;
+            }
+            &-banner {
+                &:nth-of-type(4){
+                    margin-top: 5rem;
+                    margin-bottom: 5rem;
+                }
+                &:nth-of-type(3),
+                &:nth-of-type(5),
+                &:nth-of-type(6){
+                    margin-top: 3rem;
+                    margin-bottom: 3rem;
+                }
+                &:nth-of-type(8){
+                    margin-top: 5rem;
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.insights {
+    &-title {
+        font-size: 9.6rem;
+        margin-bottom: 5rem;
+
+        @include breakpoint-down(medium) {
+            font-size: 4.8rem;
+            line-height: 130%;
+        }
+    }
+}

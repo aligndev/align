@@ -1,0 +1,123 @@
+.header {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 53px;
+    right: 0;
+    left: 0;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 72px;
+    z-index: 99;
+
+    
+    @include breakpoint-down(medium) {
+        top: 24px;
+    }
+
+    @include breakpoint-down(small) {
+        top: 14px;
+    }
+}
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &-logo {
+        display: flex;
+        align-items: center;
+    }
+    &-ol {
+        position: relative;
+        overflow: hidden;
+        margin-left: 20px;
+
+        > span {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+    }
+
+}
+.logo{
+    width: 77px;
+    height: 53px;
+}
+.logo > img{
+    @include breakpoint-down(small) {
+        max-width: 55px;
+    }
+}
+.burger {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    & > span {
+        position: absolute;
+        background-color: $black;
+        width: 100%;
+        height: 2px;
+        border-radius: 10px;
+
+        &::after {
+            left: 0;
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.3s;
+            background-color: $yellow;
+        }
+
+        &:nth-child(1)::after {
+            transition-delay: 0.0s;
+        }
+        &:nth-child(2)::after {
+            transition-delay: 0.1s;
+        }
+        &:nth-child(3)::after {
+            transition-delay: 0.2s;
+        }
+        
+
+
+        &:nth-child(2){
+            top: 6px;
+        }
+
+        &:nth-child(3){
+            top: 12px;
+        }
+    }
+
+    &:hover > span::after {
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .header {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 0 20px;
+    }
+}
+
+@include breakpoint-down(medium) {
+    .header {
+        padding: 0 15px;
+    }
+}

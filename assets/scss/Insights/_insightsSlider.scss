@@ -1,0 +1,41 @@
+.insightSlider {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 13rem;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        width: calc(100%*4/12) !important;
+
+        @include breakpoint-down(xlarge) {
+            width: calc(100%*5/12) !important;
+        }
+        @include breakpoint-down(medium) {
+            width: calc(100%*7/12) !important;
+        }
+        @include breakpoint-down(small) {
+            width: calc(100%*10/12) !important;
+        }
+        &:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        > .rto-box {
+            margin-bottom: 2.7rem;
+        }
+
+
+        > .button-type {
+            margin-top: auto;
+        }
+    }
+    &-title {
+        font-size: 2.4rem;
+        margin-bottom: 1.4rem;
+
+        @include breakpoint-down(small) {
+            font-size: 1.6rem;
+        }
+    }
+}

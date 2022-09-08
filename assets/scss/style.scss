@@ -1,0 +1,81 @@
+//--------------------- COMPONENTS START ---------------------//
+@import 'reset';
+@import 'variable';
+@import 'mixins';
+@import 'global';
+
+//**Header Styled**//
+@import './Components/Header/header';
+@import './Components/Header/menu';
+
+//**Footer Styled**//
+@import './Components/Footer/footer';
+//--------------------- COMPONENTS END ---------------------//
+
+//--------------------- HOME PAGE START ---------------------//
+//**Categories Styled**//
+@import './HomePage/Categories/categories';
+
+//**Slogan Styled**//
+@import './HomePage/Slogan/slogan';
+
+//**Project Styled**//
+@import './HomePage/Project/project';
+
+//**Services Styled**//
+@import './HomePage/Servicess/services';
+
+//**Clients Styled**//
+@import './HomePage/Clientss/clients';
+
+//**Insights Styled**//
+@import './HomePage/Insights/insights';
+
+//--------------------- HOME PAGE END ---------------------//
+
+//--------------------- WORKS START ---------------------//
+//**Works Styled**//
+@import './Works/works';
+@import './Works/wehave';
+@import './Works/workPage';
+@import './Works/pakage';
+//--------------------- WORKS END ---------------------//
+
+//--------------------- ABOUT START ---------------------//
+//**About Styled**//
+@import './About/about';
+@import './About/story';
+@import './About/services';
+//--------------------- ABOUT END ---------------------//
+
+//--------------------- INSIGHTS START ---------------------//
+//**Insights Page Styled**//
+@import './Insights/insights';
+@import './Insights/insightsSlider';
+
+//--------------------- INSIGHTS END ---------------------//
+
+//--------------------- BLOG DETAIL START ---------------------//
+//**Blogdetail Styled**//
+@import './BlogDetail/blogdetail';
+
+//--------------------- BLOG DETAIL END ---------------------//
+
+//--------------------- Contact START ---------------------//
+//**Contact Styled**//
+@import './Contact/contact';
+
+//--------------------- Contact END ---------------------//
+
+//--------------------- Carreer START ---------------------//
+//**Carreer Styled**//
+@import './Carreer/carreer';
+
+//--------------------- Carreer END ---------------------//
+
+
+//--------------------- Branding START ---------------------//
+//**Branding Styled**//
+@import './Branding/branding';
+
+//--------------------- Branding END ---------------------//
