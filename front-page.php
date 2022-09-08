@@ -3,22 +3,22 @@
 <section class="hero mt">
     <div class="container">
         <div class="hero-flex">
-            <div class="hero-title">
+            <h4 class="hero-title">
                 <span>
                     Aligning customer with <br>
                     design and strategy
                 </span>
-            </div>
+            </h4>
             <div class="slogan-award">
                 <a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/alignvn#summary" class="slogan-logo">
-                    <img src="/Images/Slogan.png" alt="">
+                    <img src="/wp-content/uploads/2022/09/Slogan-min.png" alt="">
                 </a>
                 <div class="slogan-award__content">
                     <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/vn/agencies/branding">
                         Align is top 34 UX/UI
                     </a>
                     <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/agencies/digital?page=6">Top VietNam Agency</a>
-                    <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/profile/alignvn#summary">5 <img src="/Images/star.png" alt="">
+                    <a target="_blank" rel="noopener noreferrer" class="hover" href="https://clutch.co/profile/alignvn#summary">5 <img src="/wp-content/uploads/2022/09/star-min.png" alt="">
                         Reviews (13)</a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
 <section class="slogan">
     <div class="container">
         <div class="slogan-wrap">
-            <div class="slogan-text" data-splitting>
+            <h3 class="slogan-text" data-splitting>
                 <span class="slogan-animation">Your customers wants to know your
                     <span class="slogan-orange">
                         <a href="/" onclick="return false;" class="hover">brand. </a>
@@ -48,16 +48,16 @@
                         <a href="/" onclick="return false;" class="hover">SEO</a>
                     </span>.
                 </span>
-            </div>
+            </h3>
         </div>
     </div>
 </section>
 <section class="project">
     <div class="container">
-        <div class="project-title">Website projects</div>
+        <h2 class="project-title">Website projects</h2>
         <div class="project-grid">
             <a href="./Work/Funingpu.html" class="project-item project-view">
-                <img src="/Images/FuningpuBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/FuningpuBanner-min.png" alt="">
                 <div class="project-content">
                     <div class="project-title">
                         Web Dev for International Manufacturer
@@ -80,7 +80,7 @@
                 </div>
             </a>
             <a href="./Work/Furas.html" class="project-item project-view">
-                <img src="/Images/FurasBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/FurasBanner-min.png" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -98,7 +98,7 @@
                 </div>
             </a>
             <a href="./Work/ICM.html" class="project-item project-view">
-                <img src="/Images/ICMBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/ICMBanner-min.png" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -116,7 +116,7 @@
                 </div>
             </a>
             <a href="/Work/SolutionsMet.html" class="project-item project-view">
-                <img src="/Images/SmBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/SmBanner-min.png" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -134,7 +134,7 @@
                 </div>
             </a>
             <a href="/Work/Ardor.html" class="project-item project-view">
-                <img src="/Images/ArdorBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/ArdorBanner-min.png" alt="">
                 <div class="project-overlay project-view">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -152,7 +152,7 @@
                 </div>
             </a>
             <a href="/Work/DataSociety.html" class="project-item project-view">
-                <img src="/Images/DataBanner.png" alt="">
+                <img src="/wp-content/uploads/2022/09/DataBanner-min.png" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -183,10 +183,10 @@
 </section>
 <section class="project">
     <div class="container">
-        <div class="project-title">Branding projects</div>
+        <h2 class="project-title">Branding projects</h2>
         <div class="project-grid">
             <a href="/Work/nafoods-print-design.html" class="project-item branding-item project-view">
-                <img src="/Images/NaFoodBanner.jpg" alt="">
+                <img src="/wp-content/uploads/2022/09/NaFoodBanner-min.jpg" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -204,7 +204,7 @@
                 </div>
             </a>
             <a href="/Work/skyline-spirulina.html" class="project-item branding-item project-view">
-                <img src="/Images/SkylineBanner.webp" alt="">
+                <img src="/wp-content/uploads/2022/09/SkylineBanner.webp" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -222,7 +222,7 @@
                 </div>
             </a>
             <a href="/Work/nafoods-group.html" class="project-item branding-item project-view">
-                <img src="/Images/NaFoodBanner.webp" alt="">
+                <img src="/wp-content/uploads/2022/09/NaFoodBanner.webp" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -240,7 +240,7 @@
                 </div>
             </a>
             <a href="/Work/bizen.html" class="project-item branding-item project-view">
-                <img src="/Images/BizenBanner.webp" alt="">
+                <img src="/wp-content/uploads/2022/09/BizenBanner.webp" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -258,7 +258,7 @@
                 </div>
             </a>
             <a href="/Work/msi.html" class="project-item branding-item project-view">
-                <img src="/Images/CancerBanner.webp" alt="">
+                <img src="/wp-content/uploads/2022/09/CancerBanner.webp" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -276,7 +276,7 @@
                 </div>
             </a>
             <a href="/Work/em-wear.html" class="project-item branding-item project-view">
-                <img src="/Images/EmWearBanner.webp" alt="">
+                <img src="/wp-content/uploads/2022/09/EmWearBanner.webp" alt="">
                 <div class="project-overlay">
                     <div class="project-overlay__wrap">
                         <div class="project-overlay__top">
@@ -308,9 +308,9 @@
 <section class="services services-section">
     <div class="container">
         <div class="services-flex">
-            <div class="services-title">
+            <h1 class="services-title">
                 Services
-            </div>
+            </h1>
             <div class="services-list">
                 <div class="services-item">
                     <div class="services-item__heading">
@@ -318,7 +318,7 @@
                             Branding
                         </span>
                         <span class="services-item__arrow">
-                            <img src="/Images/Arrow.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/Arrow-min.png" alt="">
                         </span>
                     </div>
                     <div class="services-item__desc">
@@ -331,7 +331,7 @@
                             Websites
                         </span>
                         <span class="services-item__arrow">
-                            <img src="/Images/Arrow.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/Arrow-min.png" alt="">
                         </span>
                     </div>
                     <div class="services-item__desc">
@@ -345,7 +345,7 @@
                             SEO
                         </span>
                         <span class="services-item__arrow">
-                            <img src="/Images/Arrow.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/Arrow-min.png" alt="">
                         </span>
                     </div>
                     <div class="services-item__desc">
@@ -409,9 +409,9 @@
 <section class="clients">
     <div class="clients-marque">
         <div class="container">
-            <div class="clients-title">
+            <h1 class="clients-title">
                 Clients
-            </div>
+            </h1>
             <div class="clients-list">
                 <div class="clients-list__heading">
                     Educational
@@ -419,89 +419,89 @@
                 <div class="clients-list__marque">
                     <ul class="clients-list__icon marque">
                         <li>
-                            <img src="/Images/EduLogoOne.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoOne-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoTwo.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoTwo-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoThree.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoThree-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoFour.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoFour-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoFive.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoFive-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoSix.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoSix-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoSeven.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoSeven-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoEight.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoEight-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoNine.png" alt="">
-                        </li>
-                    </ul>
-                    <ul class="clients-list__icon marque">
-                        <li>
-                            <img src="/Images/EduLogoOne.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoTwo.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoThree.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoFour.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoFive.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoSix.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoSeven.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoEight.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/EduLogoNine.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoNine-min.png" alt="">
                         </li>
                     </ul>
                     <ul class="clients-list__icon marque">
                         <li>
-                            <img src="/Images/EduLogoOne.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoOne-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoTwo.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoTwo-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoThree.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoThree-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoFour.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoFour-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoFive.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoFive-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoSix.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoSix-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoSeven.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoSeven-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoEight.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoEight-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/EduLogoNine.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/EduLogoNine-min.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoOne-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoTwo-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoThree-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoFour-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoFive-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoSix-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoSeven-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoEight-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/EduLogoNine-min.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -516,89 +516,89 @@
                 <div class="clients-list__marque">
                     <ul class="clients-list__icon marqueForward">
                         <li>
-                            <img src="/Images/IndusLogo1.png" alt="" class="clients-list__w7">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo1-min.png" alt="" class="clients-list__w7">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo2.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo2-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo3.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo3-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo4.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo4-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo5.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo5-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo6.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo6-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo7.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo7-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo8.png" alt="" class="clients-list__w7">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo8-min.png" alt="" class="clients-list__w7">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo9.png" alt="">
-                        </li>
-                    </ul>
-                    <ul class="clients-list__icon marqueForward">
-                        <li>
-                            <img src="/Images/IndusLogo1.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo2.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo3.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo4.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo5.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo6.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo7.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo8.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/IndusLogo9.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo9-min.png" alt="">
                         </li>
                     </ul>
                     <ul class="clients-list__icon marqueForward">
                         <li>
-                            <img src="/Images/IndusLogo1.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo1-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo2.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo2-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo3.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo3-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo4.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo4-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo5.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo5-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo6.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo6-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo7.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo7-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo8.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo8-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/IndusLogo9.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/IndusLogo9-min.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marqueForward">
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo1-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo2-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo3-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo4-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo5-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo6-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo7-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo8-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/IndusLogo9-min.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -613,89 +613,89 @@
                 <div class="clients-list__marque">
                     <ul class="clients-list__icon marque">
                         <li>
-                            <img src="/Images/AmericanLogo1.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo1-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo2.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo2-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo3.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo3-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo4.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo4-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo5.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo5-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo6.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo6-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo7.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo7-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo8.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo8-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo9.png" alt="">
-                        </li>
-                    </ul>
-                    <ul class="clients-list__icon marque">
-                        <li>
-                            <img src="/Images/AmericanLogo1.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo2.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo3.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo4.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo5.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo6.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo7.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo8.png" alt="">
-                        </li>
-                        <li>
-                            <img src="/Images/AmericanLogo9.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo9-min.png" alt="">
                         </li>
                     </ul>
                     <ul class="clients-list__icon marque">
                         <li>
-                            <img src="/Images/AmericanLogo1.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo1-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo2.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo2-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo3.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo3-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo4.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo4-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo5.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo5-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo6.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo6-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo7.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo7-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo8.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo8-min.png" alt="">
                         </li>
                         <li>
-                            <img src="/Images/AmericanLogo9.png" alt="">
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo9-min.png" alt="">
+                        </li>
+                    </ul>
+                    <ul class="clients-list__icon marque">
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo1-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo2-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo3-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo4-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo5-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo6-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo7-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo8-min.png" alt="">
+                        </li>
+                        <li>
+                            <img src="/wp-content/uploads/2022/09/AmericanLogo9-min.png" alt="">
                         </li>
                     </ul>
                 </div>
@@ -710,7 +710,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide reviews-info">
                             <div class="reviews-personal">
-                                <img src="/Images/ArdorClient.jpg" alt="">
+                                <img src="/wp-content/uploads/2022/09/ArdorClient-min.jpg" alt="">
                                 <div class="reviews-personal__text">
                                     <p>Arden Linh Nguyen
                                     </p>
@@ -718,29 +718,29 @@
                                     </p>
 
                                     <ul>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide reviews-info">
                             <div class="reviews-personal">
-                                <img src="/Images/GIACeo.png" alt="">
+                                <img src="/wp-content/uploads/2022/09/GIACeo-min.png" alt="">
                                 <div class="reviews-personal__text">
                                     <p>Peter Nguyen</p>
                                     <p>VP of marketing, Gia Capital LLC.</p>
 
 
                                     <ul>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
                                     </ul>
                                 </div>
 
@@ -748,18 +748,18 @@
                         </div>
                         <div class="swiper-slide reviews-info">
                             <div class="reviews-personal">
-                                <img src="/Images/Phil.png" alt="">
+                                <img src="/wp-content/uploads/2022/09/Phil-min.png" alt="">
                                 <div class="reviews-personal__text">
                                     <p>Phil Greswold</p>
                                     <p>MD, KEEP</p>
 
 
                                     <ul>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
-                                        <li><img src="/Images/star.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
+                                        <li><img src="/wp-content/uploads/2022/09/star-min.png" alt=""></li>
                                     </ul>
                                 </div>
                             </div>
@@ -787,7 +787,7 @@
                 </div>
             </div>
             <a target="_blank" rel="noopener noreferrer" href="https://clutch.co/profile/alignvn#reviews" class="reviews-logo hover">
-                <img src="/Images/Slogan.png" alt="">
+                <img src="/wp-content/uploads/2022/09/Slogan-min.png" alt="">
                 <p>Reviews from Clutch</p>
             </a>
         </div>
@@ -802,7 +802,7 @@
             <div class="swiper-wrapper">
                 <a href="/blog/how-good-design-is-helping-businesses-in-vietnam-grow.html" class="insightSlider-item swiper-slide">
                     <div class="rto-box">
-                        <img src="/Images/BlogBannerOne.png" alt="">
+                        <img src="/wp-content/uploads/2022/09/BlogBannerOne-min.png" alt="">
                     </div>
                     <div class="insightSlider-title">
                         How good design is helping bussiness in VietNam grow
@@ -814,7 +814,7 @@
                 </a>
                 <a href="/blog/what-is-branding-the-important-basics.html" class="insightSlider-item swiper-slide">
                     <div class="rto-box">
-                        <img src="/Images/BlogBannerThree.png" alt="">
+                        <img src="/wp-content/uploads/2022/09/BlogBannerThree-min.png" alt="">
                     </div>
                     <div class="insightSlider-title">
                         What is Branding? The important basics
@@ -826,7 +826,7 @@
                 </a>
                 <a href="/blog/the-importance-of-intelligent-website-design-for-business.html" class="insightSlider-item swiper-slide">
                     <div class="rto-box">
-                        <img src="/Images/BlogBannerTwo.png" alt="">
+                        <img src="/wp-content/uploads/2022/09/BlogBannerTwo-min.png" alt="">
                     </div>
                     <div class="insightSlider-title">
                         The Importance Of Intelligent Website Design For Business
@@ -837,7 +837,7 @@
                 </a>
                 <a href="/blog/top-3-million-dollar-questions-to-expect-from-investors.html" class="insightSlider-item swiper-slide">
                     <div class="rto-box">
-                        <img src="/Images/Top3Banner.JPG" alt="">
+                        <img src="/wp-content/uploads/2022/09/Top3Banner-min.JPG" alt="">
                     </div>
                     <div class="insightSlider-title">
                         Top 3 Million-Dollar Questions To Expect From Investors
@@ -849,7 +849,7 @@
                 </a>
                 <a href="/blog/content-marketing.html" class="insightSlider-item swiper-slide">
                     <div class="rto-box">
-                        <img src="/Images/MarketingContentBanner.jpg" alt="">
+                        <img src="/wp-content/uploads/2022/09/MarketingContentBanner-min.jpg" alt="">
                     </div>
                     <div class="insightSlider-title">
                         What is content marketing and why it matters (to your business.)

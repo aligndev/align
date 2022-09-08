@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
     <?php wp_head() ?>
+    <link rel="shortcut icon" href="<?php echo ASSETS . '/images/ShortCut.png' ?>">
 </head>
 
 <body class="<?php body_class(); ?>">

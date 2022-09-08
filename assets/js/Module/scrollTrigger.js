@@ -224,7 +224,7 @@ export default function createdScrollTrigger() {
 
         ScrollLottie({
             target: lottieLogo,
-            path: '/Images/LogoLottie.json',
+            path: '/wp-content/themes/alignvn/assets/images/LogoLottie.json',
             duration: 1,
         })
 

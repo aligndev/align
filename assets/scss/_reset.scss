@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	line-height: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -32,8 +33,8 @@ html{
     font-size: 62.5%;
 }
 body {
-	font-smoothing: antialiased!important;
-    -webkit-font-smoothing: antialiased!important;
+	//font-smoothing: antialiased!important;
+    //-webkit-font-smoothing: antialiased!important;
 	visibility: hidden;
 	line-height: 1;
 	font-family: 'Saira', sans-serif;
