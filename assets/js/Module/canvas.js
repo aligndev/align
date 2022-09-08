@@ -37,11 +37,15 @@ export default class Canvas {
     }
 
     createCamera() {
-        this.camera = new THREE.PerspectiveCamera(20, document.querySelector('.hero-flex').offsetWidth / window.innerHeight, 1);
-        this.camera.position.set(0, 65, 0);
-        this.camera.rotation.x = -1.57;
+        let heroFlex = document.querySelector('.hero-flex');
+        if (heroFlex) {
+            this.camera = new THREE.PerspectiveCamera(20, heroFlex.offsetWidth / window.innerHeight, 1);
+            this.camera.position.set(0, 65, 0);
+            this.camera.rotation.x = -1.57;
+    
+            this.scene.add(this.camera);
+        }
 
-        this.scene.add(this.camera);
     }
 
     addAmbientLight() {
