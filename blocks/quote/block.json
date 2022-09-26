@@ -1,0 +1,14 @@
+{
+    "name": "acf/quote",
+    "title": "Quote Section",
+    "description": "A custom quote block.",
+    "style": [ "file:./quote.css" ],
+    "category": "formatting",
+    "icon": "",
+    "keywords": ["service", "quote"],
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "quote.php"
+    },
+    "align": "full"
+}

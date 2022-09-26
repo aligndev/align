@@ -43,8 +43,33 @@ body .a-owl-s > * + * {
 }
 
 section {
-  margin: 10rem 0;
+  padding: 10rem 0;
 }
+.stk-block .stk-block.alignwide, .stk-block:is(.aligncenter,.alignwide,.alignfull)>.stk-content-align.alignwide {
+  max-width: 1920px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+a-margin-l {
+  margin: 5rem 0;
+}
+//Scroll process
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000;
+}
+
+//home page
+
+.video-wrapper {
+  padding-top: 10rem;
+}
+
 
 // Blog Detail page
 
@@ -91,6 +116,77 @@ section {
       left: 0;
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+
+//Project Single page
+.single-work  {
+  .wrapper {
+    background-color: transparent;
+  }
+  .work-wrapper {
+    .work-header-container {
+      padding-bottom: 5rem;
+      text-align: center;
+      padding-top: 10rem;
+      .projectName-wrapper {
+        display: flex;
+        justify-content: center;
+        .projectName {
+          border-radius: 30px;
+          border: 1px solid;
+          padding: 1rem;
+          margin: 0 1rem; 
+        }
+      }
+           
+    }
+    .project-button {
+      padding-bottom: 5rem;
+    }
+  }
+  
+}
+
+
+
+//Single Insights post
+
+.relativePost-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.signupEmail {
+  .container {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    form {
+      display: grid;
+      grid-template-columns: 3fr 4fr 1fr;
+      grid-gap: 3rem;
+      margin-top: 2rem;
+      input {
+        border-radius: 30px;
+        border: 2px solid #000;
+        height: 60px;
+        padding: 2.5rem 3rem;
+        &[type=submit] {
+          text-indent: -999px;
+          display: block;
+          position: relative;
+          text-decoration: none;
+          background: url(/wp-content/uploads/2022/09/Arrow-min.png) no-repeat center;
+          background-color: black;
+          background-size: contain;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+        }
+      }
     }
   }
 }

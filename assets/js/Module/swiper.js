@@ -53,7 +53,13 @@ export default function createSwiper() {
 
     const insightSwiper = new Swiper(".insightSlider", {
         speed: 800,
-        slidesPerView: 'auto',
+        slidesPerView: 2,
+        breakpoints: {
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          },
     });
 
 }

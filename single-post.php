@@ -9,16 +9,13 @@
                         <?php the_title(); ?>
                     </div>
                     <div class="button-type">
-                        <?php $cats = the_category();
-                        //printf($cats);
-                        echo $cats;
-                        // if ($cats) {
-                        //     foreach ($cats as $cat) {
-                        //         echo '<div>' . $cat . '</div>';
-                        //         echo 'test';
-                        //         //var_dump($cat);
-                        //     }
-                        // } 
+                        <?php
+                        $categories = get_the_category();
+                        foreach ($categories as $category) {
+                        ?>
+                            <?php echo '<div>' . $category->name . '</div>'; ?>
+                        <?php
+                        }
                         ?>
                     </div>
 
@@ -44,29 +41,43 @@
             <h1 class="relativeTitle">
                 More
             </h1>
-            <?php
-            $related = get_posts(array('category__in' => wp_get_post_categories($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID)));
-            if ($related) foreach ($related as $post) {
-                setup_postdata($post); ?>
-                <div class="postWrapper">
-                    <img src="<?php the_post_thumbnail_url($post->ID);
-                                ?>" alt="">
-                    <a href="<?php the_permalink();  ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+            <div class="relativePost-wrapper">
 
-                    <div>
-                        <?php //$cats = get_the_category($post->ID);
-                        $cats = the_category();
-                        if ($cats) {
+
+                <?php
+                $postID = $post->ID;
+                $args = array(
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'posts_per_page' => 3,
+                    'category__in' => wp_get_post_categories($postID),
+                    'post__not_in' => array($postID),
+                );
+                $relatedPost = new WP_Query($args);
+
+                while ($relatedPost->have_posts()) : $relatedPost->the_post();
+                ?>
+                    <a href="<?php echo the_permalink(); ?>" class="insightSlider-item">
+                        <div class="rto-box">
+                            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                        </div>
+                        <div class="insightSlider-title">
+                            <?php echo the_title(); ?>
+                        </div>
+                        <div class="button-type">
+                            <?php $cats = get_the_category();
+                            //var_dump($cats);
                             foreach ($cats as $cat) {
-                                echo $cat;
+                                echo '<div>' . $cat->name . '</div>';
                             }
-                        }
-                        ?>
-                    </div>
-                </div>
+                            ?>
+                        </div>
+                    </a>
 
-            <?php }
-            wp_reset_postdata(); ?>
+                <?php
+                endwhile;
+                wp_reset_postdata();  ?>
+            </div>
         </div>
     </section>
 </div>

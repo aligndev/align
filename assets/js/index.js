@@ -11,10 +11,10 @@ import createdActiveForm from './Module/form.js';
 import createdAnimation from './Module/animations.js';
 import createdAutoChangeText from './Module/autoChangeText.js';
 import createShowMore from './Module/showMore.js';
-import createdProcessBar from './Module/processBar.js';
+// import createdProcessBar from './Module/processBar.js';
 import createLightGallarey from './Module/lightGallarey.js';
 import createSwiper from './Module/swiper.js';
-import Canvas from './Module/canvas.js';
+// import Canvas from './Module/canvas.js';
 import SmtpMail from './Module/smtpMail.js';
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -37,10 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
     handleTabs();
     handleCheckBox();
     createdAnimation();
-    createdProcessBar();
+    // createdProcessBar();
     Splitting({ by: 'lines' });
     createLightGallarey();
     createSwiper();
     SmtpMail();
-    new Canvas().init();
+    // new Canvas().init();
 });

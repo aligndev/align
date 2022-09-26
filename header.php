@@ -10,9 +10,10 @@
     <link rel="shortcut icon" href="<?php echo ASSETS . '/images/ShortCut.png' ?>">
 </head>
 
-<body class="<?php body_class(); ?>">
+<body <?php echo body_class(); ?>">
     <div id="loading">
     </div>
+    <div id="scroll-progress"></div>
     <div class="cursor-follow">
         <div class="cursor-view">
             <span>
@@ -105,30 +106,30 @@
 
                     <ul class="menu-black__list">
                         <li class="menu-black__item">
-                            <a href="/works.html" class="menu-black__link hover">
+                            <a href="/works" class="menu-black__link hover">
                                 <span>Website</span>
                                 <span>Website</span>
                             </a>
                         </li>
                         <li class="menu-black__item">
-                            <a href="/works.html" class="menu-black__link hover">
+                            <a href="/works" class="menu-black__link hover">
                                 <span>Branding</span>
                                 <span>Branding</span>
                             </a>i
                         </li>
                         <li class="menu-black__item">
-                            <a href="/works.html" class="menu-black__link hover">
+                            <a href="/works" class="menu-black__link hover">
                                 <span>SEO</span>
                                 <span>SEO</span>
                             </a>
                         </li>
                         <li class="menu-black__item">
-                            <a href="/about.html" class="menu-black__link hover">
+                            <a href="/about" class="menu-black__link hover">
                                 <span>About</span><span>About</span>
                             </a>
                         </li>
                         <li class="menu-black__item">
-                            <a href="/insights.html" class="menu-black__link hover">
+                            <a href="/insights" class="menu-black__link hover">
                                 <span>Insights</span><span>Insights</span>
                             </a>
                         </li>

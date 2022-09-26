@@ -1,5 +1,7 @@
-<?php echo get_header(); ?>
+ <?php echo get_header(); ?>
 
+ <?php the_content(); ?>
+ <!--
 <section class="about mt">
     <div class="container">
         <h4 class="about-title" data-splitting>
@@ -374,60 +376,59 @@
             </div>
         </div>
     </div>
-</section>
-<section class="services last-section whiteSmoke">
-    <div class="container">
-        <h2 class="services-quote about-quote" data-splitting>
-            <span data-content="customer">Customer centered design.</span><br>
-            <span data-content="outsourcing">Process driven.</span>
-            <span data-content="design">On brand design.</span><br>
-            <span data-content="custom">Custom design and coding.</span>
-            <span data-content="result">Result oriented.</span>
-            <span data-content="transparency">Transparency.</span><br>
-            <span data-content="clear">Clear & frequent communication.</span>
+</section> -->
+ <!-- <section class="services last-section whiteSmoke">
+     <div class="container">
+         <h2 class="services-quote about-quote" data-splitting>
+             <span data-content="customer">Customer centered design.</span><br>
+             <span data-content="outsourcing">Process driven.</span>
+             <span data-content="design">On brand design.</span><br>
+             <span data-content="custom">Custom design and coding.</span>
+             <span data-content="result">Result oriented.</span>
+             <span data-content="transparency">Transparency.</span><br>
+             <span data-content="clear">Clear & frequent communication.</span>
 
-            <div class="services-symbol">
-                <div class="services-content" id="customer">
-                    <span>
-                        We do careful customer research and design to meet your customer's needs.
-                    </span>
-                </div>
-                <div class="services-content" id="outsourcing">
-                    <span>
-                        Our clear process makes you feel at peace because you know what to expect for each phase
-                        of the project.
-                    </span>
-                </div>
-                <div class="services-content" id="design">
-                    <span>
-                        Our design follow your brand's guidelines
-                    </span>
-                </div>
-                <div class="services-content" id="custom">
-                    <span>
-                        We make sure that every design is unique and fit with personality of your brand
+             <div class="services-symbol">
+                 <div class="services-content" id="customer">
+                     <span>
+                         We do careful customer research and design to meet your customer's needs.
+                     </span>
+                 </div>
+                 <div class="services-content" id="outsourcing">
+                     <span>
+                         Our clear process makes you feel at peace because you know what to expect for each phase
+                         of the project.
+                     </span>
+                 </div>
+                 <div class="services-content" id="design">
+                     <span>
+                         Our design follow your brand's guidelines
+                     </span>
+                 </div>
+                 <div class="services-content" id="custom">
+                     <span>
+                         We make sure that every design is unique and fit with personality of your brand
 
-                    </span>
-                </div>
-                <div class="services-content" id="result">
-                    <span>
-                        We make sure that we can solve the client's problem in our design
-                    </span>
-                </div>
-                <div class="services-content" id="transparency">
-                    <span> We are transparent about what we can and can not do</span>
-                </div>
-                <div class="services-content" id="clear">
-                    <span>
-                        We strictly follow the timeline and keep our client updated on the progress. We work
-                        closely with the client to solve any challenge that rise up during and after the life
-                        cycle of the project.
+                     </span>
+                 </div>
+                 <div class="services-content" id="result">
+                     <span>
+                         We make sure that we can solve the client's problem in our design
+                     </span>
+                 </div>
+                 <div class="services-content" id="transparency">
+                     <span> We are transparent about what we can and can not do</span>
+                 </div>
+                 <div class="services-content" id="clear">
+                     <span>
+                         We strictly follow the timeline and keep our client updated on the progress. We work
+                         closely with the client to solve any challenge that rise up during and after the life
+                         cycle of the project.
 
-                    </span>
-                </div>
-            </div>
-        </h2>
-    </div>
-</section>
-
-<?php echo get_footer(); ?>
+                     </span>
+                 </div>
+             </div>
+         </h2>
+     </div>
+ </section> -->
+ <?php echo get_footer(); ?>

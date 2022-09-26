@@ -6,16 +6,16 @@
     &-item {
         display: flex;
         flex-direction: column;
-        width: calc(100%*4/12) !important;
+        // width: calc(100%*4/12) !important;
 
         @include breakpoint-down(xlarge) {
-            width: calc(100%*5/12) !important;
+            // width: calc(100%*5/12) !important;
         }
         @include breakpoint-down(medium) {
-            width: calc(100%*7/12) !important;
+            // width: calc(100%*7/12) !important;
         }
         @include breakpoint-down(small) {
-            width: calc(100%*10/12) !important;
+            // width: calc(100%*10/12) !important;
         }
         &:not(:last-child) {
             margin-right: 24px;

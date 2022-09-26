@@ -12,9 +12,9 @@
         transition: all .6s ease;
     }
     &-black {
-        display: none !important;
+        // display: none !important;
         background-color: $black;
-        // width: 55%;
+         width: 55%;
         display: flex;
         justify-content: center;
         &__wrap {
@@ -28,6 +28,7 @@
             border-radius: 100rem;
             transition: $transition;
             z-index: 2;
+            display: none;
             &::after {
                 position: absolute;
                 content: "";

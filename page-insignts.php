@@ -1,6 +1,7 @@
 <?php echo get_header(); ?>
 
-<div class="mt">
+<?php the_content(); ?>
+<!-- <div class="mt">
     <div class="container">
         <div class="insightsPage-heading">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -286,6 +287,6 @@
             </div>
         </div>
     </footer>
-</div>
+</div> -->
 
 <?php echo get_footer(); ?>

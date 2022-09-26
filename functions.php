@@ -31,8 +31,6 @@ if (!function_exists('alignvn_theme_setup')) {
         add_theme_support('automatic-feed-links');
         add_theme_support('align-wide');
         add_theme_support('wp-block-styles');
-        add_theme_support('editor-styles');
-        // add_theme_support('custom-logo');
     };
 
     add_action('init', 'alignvn_theme_setup');
@@ -101,3 +99,14 @@ function alignvn_style()
     wp_enqueue_style('align_extra_style', ASSETS . '/css/extra.css', 'all');
 }
 add_action('wp_enqueue_scripts', 'alignvn_style');
+
+
+
+//Register Block
+
+add_action('init', 'register_acf_blocks');
+function register_acf_blocks()
+{
+    register_block_type(__DIR__ . '/blocks/testimonial');
+    register_block_type(__DIR__ . '/blocks/quote');
+}
