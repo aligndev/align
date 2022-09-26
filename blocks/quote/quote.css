@@ -3,9 +3,11 @@
     /* padding: 16.8rem 0; */
     padding-top: 0;
     position: relative;
+    padding-bottom: 20rem;
 }
 .services-quote {
     position: static;
+    width: 90%;
 }
 
 .services-quote > span {
